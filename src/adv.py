@@ -16,7 +16,7 @@ items = {
 room = {
     'outside':  Room("Outside Cave Entrance",
                      "North of you, the cave mount beckons",
-                     [items['sword'], items['map']]),
+                     [items['gold'], items['food']]),
 
     'foyer':    Room("Foyer", """Dim light filters in from the south. Dusty
 passages run north and east.""", []),
@@ -30,7 +30,7 @@ to north. The smell of gold permeates the air.""", []),
 
     'treasure': Room("Treasure Chamber", """You've found the long-lost treasure
 chamber! Sadly, it has already been completely emptied by
-earlier adventurers. The only exit is to the south.""", [items['map']]),
+earlier adventurers. The only exit is to the south.""", [items['food']]),
 }
 
 
@@ -137,7 +137,7 @@ while True:
                 print(item)
 
         elif user_input[0] == 'q':
-            print('Goodbye!!!')
+            print('see you soon!!!')
             break
 
         else:
